@@ -120,11 +120,11 @@ border-radius: 10px;
 background-color: rgba(25, 147, 147, 0.2);
 }
 
-.item-container-user::before {
+.item-container-user::after {
   top: 0;
   width: 50px;
   height: 50px;
-  margin-right: 10px;
+  margin-left: 10px;
   border-radius: 50px;
   content: '';
   background-size: 50px 50px;
@@ -133,7 +133,7 @@ background-color: rgba(25, 147, 147, 0.2);
 }
 
 .item-container-user .item {
-  padding-left: 40px;
+  padding-right: 40px;
   color: white;
   position: relative;
 clear: both;
