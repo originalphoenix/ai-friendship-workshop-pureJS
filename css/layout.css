@@ -120,12 +120,30 @@ border-radius: 10px;
 background-color: rgba(25, 147, 147, 0.2);
 }
 
-.item-container-user .item {
-  background-image: url(../i/avatar_user.svg);
-  background-position: right;
-  padding-right: 40px;
-  color: #86cecb;
+.item-container-user::before {
+  top: 0;
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  border-radius: 50px;
+  content: '';
+  background-size: 50px 50px;
+  background-color: #e12885;
+  background-image: url(../i/user-avatar.png);
 }
+
+.item-container-user .item {
+  padding-left: 40px;
+  color: white;
+  position: relative;
+clear: both;
+display: inline-block;
+padding: 16px 40px 16px 20px;
+margin: 0 0 20px 0;
+border-radius: 10px;
+background-color: rgba(25, 147, 147, 0.2);
+}
+
 
 
 .app-footer {
