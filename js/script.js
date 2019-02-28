@@ -93,7 +93,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
     /* Trigger the addUserItem with the text to show that their speech was recognized */
     addUserItem(recognizedText);
-    // socket.emit('chat message', recognizedText);
 
     /* Start the API.ai Magic with a promise */
     let promise = apiClient.textRequest(recognizedText);
@@ -126,12 +125,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
       console.log("Error from api.ai server: ", serverError);
     }
   };
-
-/*   socket.on('bot reply', function(replyText) {
-    if(replyText == '') replyText = '(No answer...)';
-    synthVoice(replyText);
-    addBotItem(replyText);
-  }); */
 
   /* Recognition error handling */
 
